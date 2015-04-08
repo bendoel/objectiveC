@@ -14,4 +14,7 @@
     int age;
 }
 
+- (void)enterInfo;
+- (void)printInfo;
+
 @end

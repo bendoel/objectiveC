@@ -10,4 +10,26 @@
 
 @implementation Person
 
+- (void) enterInfo {
+    NSLog(@"What is your first name :");
+    char cstring[40];
+    scanf("%s", cstring);
+    
+    firstName = [NSString stringWithCString:cstring encoding:1];
+    
+    NSLog(@"What is your last name :");
+    scanf("%s", cstring);
+    
+    lastName = [NSString stringWithCString:cstring encoding:1];
+    
+    NSLog(@"How old are %@ %@ ?", firstName, lastName);
+    scanf("%i", &age);
+    
+}
+
+- (void) printInfo {
+    NSLog(@"First name : %@", firstName);
+    NSLog(@"%@ %@ is %i years old", firstName, lastName, age);
+
+}
 @end

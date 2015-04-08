@@ -30,11 +30,16 @@
 //}
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-
+        Person *newPerson = [[Person alloc] init];
+        
+        [newPerson enterInfo];
+        [newPerson printInfo];
+        
     }
     return 0;
 }
