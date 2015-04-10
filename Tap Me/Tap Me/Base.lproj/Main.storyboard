@@ -28,7 +28,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-hn-f2a">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-hn-f2a">
                                 <rect key="frame" x="186" y="159" width="228" height="240"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
@@ -45,6 +45,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5aZ-hn-f2a" secondAttribute="centerX" id="I94-ND-FJf"/>
+                            <constraint firstAttribute="centerY" secondItem="5aZ-hn-f2a" secondAttribute="centerY" constant="21" id="tTa-Ts-AjI"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Item" id="ECx-DS-zYt"/>
